@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "8b4e17a2-8857-4dab-aef2-dd19a88bc668",
+		"name": "TechTransfer",
+		"description": "# TechTransfer\n\nPatents, Software, and Tech Transfer Reports\n\nNASA's Technology Transfer Program ensures that innovations developed for\nexploration and discovery are broadly available to the public. The NASA patent portfolio is available to benefit US\ncitizens. Through partnerships and licensing agreements with industry, these patents ensure that NASA&rsquo;s\ninvestments in pioneering research find secondary uses that benefit the economy, create jobs, and improve quality of\nlife. This endpoint provides structured, searchable developer access to NASA&rsquo;s patents, software, and technology\nspinoff descriptions that have been curated to support technology transfer. More information can be found at <a\n    href='https://technology.nasa.gov/'>technology.nasa.gov</a> and <a\n    href='https://software.nasa.gov/'>software.nasa.gov</a> and <a\n    href='https://spinoff.nasa.gov/'>spinoff.nasa.gov</a>.\n    \n    \n    \n### HTTP Request\n\n<code class=\"prettyprint\">GET https://api.nasa.gov/techtransfer</code>\n\n\n### Query Parameters\n\n<table>\n    <thead>\n        <tr>\n            <th>Parameter</th>\n            <th>Type</th>\n            <th>Default</th>\n            <th>Description</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>patent</td>\n            <td>string</td>\n            <td>None</td>\n            <td>Return a JSON of patents that match the string provided</td>\n        </tr>\n        <tr>\n            <td>patent_issued</td>\n            <td>string</td>\n            <td>None</td>\n            <td>Returns patent results in a\n                JSON that match the string within the information about how issued each patent</td>\n        </tr>\n        <tr>\n            <td>software</td>\n            <td>string</td>\n            <td>None</td>\n            <td>Returns JSON of NASA software that matches given string.</td>\n        </tr>\n        <tr>\n            <td>Spinoff</td>\n            <td>string</td>\n            <td>None</td>\n            <td>Returns spinoff examples that match given word.</td>\n        </tr>\n        <tr>\n    </tbody>\n</table>\n<h3 id=\"example-query\">Example query</h3> \n\n<a href=\"https://api.nasa.gov/techtransfer/patent/?engine&api_key=DEMO_KEY\">\n  <code class=\"prettyprint\">https://api.nasa.gov/techtransfer/patent/?engine&api_key=DEMO_KEY</code>\n</a>",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TechTransfer",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{API_KEY}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api_key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/techtransfer/patent/?engine&patent&patent_issued&software&Spinoff",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"techtransfer",
+						"patent",
+						""
+					],
+					"query": [
+						{
+							"key": "engine",
+							"value": null
+						},
+						{
+							"key": "patent",
+							"value": null
+						},
+						{
+							"key": "patent_issued",
+							"value": null
+						},
+						{
+							"key": "software",
+							"value": null
+						},
+						{
+							"key": "Spinoff",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

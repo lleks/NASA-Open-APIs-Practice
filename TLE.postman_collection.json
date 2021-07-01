@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "5ddb410a-831d-4c26-816e-a4b2eedcae79",
+		"name": "TLE",
+		"description": "# TLE API\n\nTwo line element data for earth-orbiting objects at a given point in time\n\nThe TLE API provides up to date two line element set records, the data is updated daily from\n<a target=\"_blank\" href=\"https://celestrak.com\">CelesTrak</a> and served in JSON format. A two-line element set (TLE) is\na data format encoding a list of orbital elements of an Earth-orbiting object for a given point in time. For more\ninformation on TLE data format visit <a target=\"_blank\" href=\"https://spaceflight.nasa.gov/realdata/sightings/SSapplications/Post/JavaSSOP/SSOP_Help/tle_def.html\">Definition\n    of Two-line Element Set Coordinate System</a>.Further documentation and response examples are available at: <a\n    target=\"_blank\" href=\"http://tle.ivanstanojevic.me\">http://tle.ivanstanojevic.me</a>\n\n### Available endpoints\n\nThe TLE API consists of two endpoints \n\n<code class=\"prettyprint\"> GET http://tle.ivanstanojevic.me </code>\n\n<table>\n    <thead>\n        <tr>\n            <th>Endpoint</th>\n            <th>Description</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <th>GET /api/tle?search={q}</th>\n            <th>Performing a search by satellite name</th>\n        </tr>\n        <tr>\n            <th>GET /api/tle/{q}</th>\n            <th>Retrieving a single TLE record where query is satellite number</th>\n        </tr>\n    </tbody>\n</table>\n\n### Example query\n\n<a target=\"_blank\" href=\"http://tle.ivanstanojevic.me/api/tle\">  \n<code class=\"prettyprint\"> http://tle.ivanstanojevic.me/api/tle </code> </a>\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TLE",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{API_KEY}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api_key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tle.ivanstanojevic.me/api/tle",
+					"protocol": "http",
+					"host": [
+						"tle",
+						"ivanstanojevic",
+						"me"
+					],
+					"path": [
+						"api",
+						"tle"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
