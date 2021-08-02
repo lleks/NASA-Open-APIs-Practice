@@ -6,19 +6,6 @@ Collections with Useful API for profesional and amateurs astronomers or anyone w
 
 Reduce your time testing NASA APIs with this Postman Public Workspace.
 
-# How to Use
-
-1. Make a Fork of this Workspace.
-2. Requesta an API_Key in [NASA OPEN APIs site](https://api.nasa.gov/).
-3. Create an environment with API_KEY variable.
-4. Send a request.
-5. Modify parameters of APIs.
-6. ENJOY DISCOVER SPACE AND UNIVERSE!!
-
-[![video][logo]](https://www.youtube.com/watch?v=vAdTL6t_YP4&ab_channel=MiguelOlave)
-
-[logo]: https://user-images.githubusercontent.com/12848649/107236979-023f0f80-6a05-11eb-8b6d-7fda9094c92b.png
-
 # Some Collection Added
 
 - APOD - Astronomy Picture of the Day
